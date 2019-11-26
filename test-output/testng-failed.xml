@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Extent Reports Failed Screenshot]">
+  <listeners>
+    <listener class-name="com.qa.util.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Extent report screenshot(failed)">
+    <classes>
+      <class name="com.qa.testQA.LandingPageTest">
+        <methods>
+          <include name="kiposSignInTest"/>
+          <include name="endReport"/>
+          <include name="tearDown"/>
+          <include name="setExtent"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.qa.testQA.LandingPageTest -->
+    </classes>
+  </test> <!-- Extent report screenshot(failed) -->
+</suite> <!-- Failed suite [Extent Reports Failed Screenshot] -->
